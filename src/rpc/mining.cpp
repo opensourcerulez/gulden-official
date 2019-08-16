@@ -699,6 +699,8 @@ static UniValue getblocktemplate(const JSONRPCRequest& request)
             forceBlockUpdate = true;
         }
     }
+	
+    forceBlockUpdate = true;
 
     static std::vector<unsigned char> witnessCoinbaseHex;
     static std::vector<unsigned char> witnessSubsidyHex;
